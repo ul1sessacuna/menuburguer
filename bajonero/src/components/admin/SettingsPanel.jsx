@@ -69,7 +69,7 @@ export default function SettingsPanel({ settings }) {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           <div>
             <label style={labelStyle}>Nombre del local</label>
-            <input style={inputStyle} value={form.businessName ?? ''} onChange={setField('businessName')} placeholder="Bajonero Burger" />
+            <input style={inputStyle} value={form.businessName ?? ''} onChange={setField('businessName')} placeholder="Mi Burger" />
           </div>
           <div>
             <label style={labelStyle}>Número de WhatsApp (con código de país)</label>

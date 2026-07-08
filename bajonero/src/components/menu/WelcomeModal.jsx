@@ -85,7 +85,7 @@ export default function WelcomeModal({ businessName }) {
             <Sparkles size={22} color="#4ade80" />
           </div>
           <h2 style={{ margin: '0 0 6px', fontSize: '1.4rem', fontWeight: 900, color: '#fff', letterSpacing: '-0.4px' }}>
-            ¡Bienvenido a {businessName ?? 'Bajonero Burger'}!
+            ¡Bienvenido a {businessName ?? 'nuestro menú'}!
           </h2>
           <p style={{ margin: 0, fontSize: '0.88rem', color: 'rgba(255,255,255,0.5)', lineHeight: 1.5 }}>
             Hacé tu pedido en minutos, así de fácil:

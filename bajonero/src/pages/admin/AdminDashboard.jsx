@@ -59,7 +59,7 @@ export default function AdminDashboard() {
       <header style={{ backgroundColor: '#0c0c0c', borderBottom: '1px solid #1e1e1e', padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'sticky', top: 0, zIndex: 10 }}>
         <div>
           <h1 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 800 }}>
-            {settings?.businessName ?? 'Bajonero Burger'}
+            {settings?.businessName ?? 'Mi Burger'}
           </h1>
           <p style={{ margin: 0, fontSize: '0.7rem', color: '#4ade80', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
             Panel de administración

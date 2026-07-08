@@ -1,4 +1,4 @@
-export const buildWhatsAppMessage = (items, notes, businessName = 'Bajonero Burger') => {
+export const buildWhatsAppMessage = (items, notes, businessName = 'Burger') => {
   const lines = items.map(
     (item) => `• ${item.quantity}x ${item.name} — $${(item.price * item.quantity).toLocaleString('es-AR')}`
   )

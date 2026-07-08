@@ -10,8 +10,8 @@ export const updateSettings = (data) =>
   setDoc(REF(), data, { merge: true })
 
 export const DEFAULT_SETTINGS = {
-  businessName: 'Bajonero Burger',
-  whatsappNumber: '543482565398',
+  businessName: 'Mi Burger',
+  whatsappNumber: '',
   announcement: '',
   businessHours: {
     lunes:     { open: '18:00', close: '23:30', closed: false },

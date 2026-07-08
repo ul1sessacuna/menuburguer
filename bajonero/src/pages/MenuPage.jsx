@@ -61,17 +61,21 @@ export default function MenuPage() {
         display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px',
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          {/* Logo placeholder con inicial */}
           <div style={{
-            width: '58px', height: '58px', borderRadius: '16px', overflow: 'hidden', flexShrink: 0,
-            border: '1.5px solid rgba(255,255,255,0.08)',
+            width: '44px', height: '44px', borderRadius: '14px', flexShrink: 0,
+            background: 'linear-gradient(135deg, #f0a030, #d4881a)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
           }}>
-            <img src="/bajonero.jpg" alt="Bajonero" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <span style={{ color: '#000', fontWeight: 900, fontSize: '1.3rem', letterSpacing: '-1px', lineHeight: 1 }}>
+              {(settings?.businessName ?? 'B').charAt(0).toUpperCase()}
+            </span>
           </div>
           <div>
-            <h1 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: '#fff', lineHeight: 1, letterSpacing: '-0.5px' }}>
-              {settings?.businessName ?? 'Bajonero Burger'}
+            <h1 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 900, color: '#fff', lineHeight: 1, letterSpacing: '-0.4px' }}>
+              {settings?.businessName ?? 'Burger'}
             </h1>
-            <div style={{ marginTop: '5px' }}>
+            <div style={{ marginTop: '4px' }}>
               <BusinessHours settings={settings} />
             </div>
           </div>
@@ -172,7 +176,7 @@ export default function MenuPage() {
 
       <CartDrawer
         whatsappNumber={settings?.whatsappNumber ?? ''}
-        businessName={settings?.businessName ?? 'Bajonero Burger'}
+        businessName={settings?.businessName ?? 'Mi Burger'}
       />
 
       <WelcomeModal businessName={settings?.businessName} />
